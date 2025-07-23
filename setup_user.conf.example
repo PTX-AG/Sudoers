@@ -1,0 +1,15 @@
+# Sample configuration for setup_user.sh
+# Shell KEY=VALUE format. Variables:
+#   USERNAME       Username to create/configure
+#   PASSWORD       Password for the user (avoid in production plaintext)
+#   SSH_KEYS_FILE  Path to file with SSH public keys (one per line)
+#   SSH_PORT       SSH daemon port
+#   LOG_FILE       Path to write the setup log
+#   DRY_RUN        true/false to preview actions only
+
+USERNAME=alice
+PASSWORD=ChangeMe123
+SSH_KEYS_FILE=/home/alice/keys.pub
+SSH_PORT=2222
+LOG_FILE=/tmp/setup_user.log
+DRY_RUN=false
